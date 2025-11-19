@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM openjdk:17-jdk-slim
 
 # Set the working directory in the container
 WORKDIR /facens_devops
@@ -12,3 +12,4 @@ EXPOSE 8585
 # Specify the command to run on container start
 
 CMD ["java", "-jar", "ac2_ca-0.0.1-SNAPSHOT.jar"]
+
